@@ -1,0 +1,38 @@
+.login {
+	margin: 0 auto;
+}
+
+body {
+	background-color: #a3c2c2
+}
+
+p {
+	background-color: orange;
+}
+
+input {
+		padding: 15px;
+		font-size: 16px;
+		background-color: #e8eeef;
+		border: none;
+		width: 300px;
+	}
+
+.buttons {
+	font-size: 15px;
+	padding:13px;
+}
+
+#input {
+	padding: 15px;
+	font-size: 16px;
+	background-color: #e8eeef;
+	margin-bottom: 30px;
+	border: none;
+	width: 300px;
+
+}
+
+#logo {
+	background-width: 200px;
+}
