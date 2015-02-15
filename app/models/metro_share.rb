@@ -1,20 +1,20 @@
-class User
-  attr_accessor :name
+# class User
+#   attr_accessor :name
 
-  NAME = []
+#   NAME = []
 
-  def initialize(name)
-    @name = name
-    NAME << self
-  end
-
-
-  def self.show_name
-    NAME
-  end
+#   def initialize(name)
+#     @name = name
+#     NAME << self
+#   end
 
 
-end
+#   def self.show_name
+#     NAME
+#   end
+
+
+# end
 
 class Post
   attr_accessor :user, :message, :time, :location
