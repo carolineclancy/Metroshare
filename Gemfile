@@ -1,7 +1,5 @@
 source "https://rubygems.org"
 
-gem 'install'
-
 gem "sinatra"
 
 group :development do

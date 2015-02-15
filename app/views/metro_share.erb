@@ -6,17 +6,36 @@
     <title>MetroShare</title>
       <link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="main.css">
   </head>
 
   <body>
-
     <div class="container">
-    <form action="/" method="POST">
-      User: <input type="text" name="user">
-      Message: <input type="text" name="message">
-      <input type="submit">
-    </form>
+      <div class="row">
+        <div class="col-lg-8">
+          <h1>WELCOME TO METRO SHARE</h1>
+        </div>
+      </div>
+      <div class="row">
+        <h3>In NYC, one in three poor New Yorkers can't afford public transit. At MetroShare, we strive to create a lasting solution to poverty through the exchange of metrocards. We intend to do this by creating a platform that will allow our users to share a monthly, unlimited metrocard.</h3>
+      </div>
+
+      <div class="container" id="map">
+        <p><em><a href="https://docs.google.com/spreadsheet/ccc?key=0Au1H4573Ie5BdEIzOFcyOEtnRFQzd2lFODZnNHBTQmc&usp=drive_web#gid=0" target="_blank">spreadsheet</a></em><p>
+      </div>
+
+      <div class="row">
+          <% @messages.each do |message| %>
+      <h1 style="background-color: #D1E0E0; border-radius: 10px; margin-left: 300px; margin-right: 300px"><%= message.message %><br>
+      <font>Name:<%= message.user%></font>
+      <font>Time:<%= message.time%></font></h1>
+    <% end %>
+        <form action="/metrosharers" method="POST">
+        <font style="font-">User: </font><input type="text" name="user">
+        Message: <input type="text" name="message">
+        Time: <input type="date" name="time">
+        <input style="margin-left: 195px;" type="submit">
+      </form>
     </div>
   </body>
 </html>
